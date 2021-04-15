@@ -1,17 +1,19 @@
 import logo from './logo.svg';
-import './App.css';
+import './Home.css';
 import Links from './Links';
+import "./Links.css"
+import {Link} from "react-router-dom";
 
-const projects = [
+const redes = [
    {
       key :1,
-      name: "Clock",
+      name: "Google",
       link: "www.google.com"
    },
    {
       key:2,
-      name: "Counter",
-      link: "www.google.com"
+      name: "Youtube",
+      link: "www.Youtube.com"
    }
 ];
 
@@ -27,8 +29,21 @@ function App() {
             <h2>
                <code>Mini Projects</code>
             </h2>
-            <Links links={projects} />
+            
+            <nav>
+               <ol>
+                  <li>
+                     <Link to="/clock" target="_blank">Clock</Link>
+                  </li>
+                  <li>
+                     <Link to="/counter" target="_blank" >Counter</Link>
+                  </li>
+               </ol>
+            </nav>
+            <h2>EN PROCESO</h2>
+            <Links links={redes} />
          </header>
+         
       </div>
    );
 }

@@ -6,7 +6,7 @@ const Links = ({links}) => {
          <ol>
          {links.map(function(value){
             return(<li className="link-container" key={value.key} >
-               <a className="link-project" href={value.link} target="_blank" rel="noreferrer">
+               <a className="link-project" href={value.link} target="_blank" rel="noopened noreferrer">
                   {value.name}
                </a>
             </li>);
