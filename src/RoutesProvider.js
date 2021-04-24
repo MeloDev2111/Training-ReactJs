@@ -9,6 +9,7 @@ import {
 import Home from "./components/index/Home";
 import Clock from "./components/Clock/Clock";
 import Counter from "./components/Counter/Counter";
+import TrainExample from "./components/train/TrainExample";
 
 export default function App() {
    return (
@@ -22,6 +23,9 @@ export default function App() {
             </Route>
             <Route exact path="/Counter">
                <Counter />
+            </Route> 
+            <Route exact path="/Train">
+               <TrainExample />
             </Route>
          </Switch>
       </Router>

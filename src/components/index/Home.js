@@ -8,12 +8,12 @@ const redes = [
    {
       key :1,
       name: "Google",
-      link: "www.google.com"
+      link: "https://www.google.com.br/"
    },
    {
       key:2,
       name: "Youtube",
-      link: "www.Youtube.com"
+      link: "https://www.youtube.com/"
    }
 ];
 
